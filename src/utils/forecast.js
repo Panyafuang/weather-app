@@ -12,9 +12,9 @@ const forecast = (latitude, longitude, cb) =>{
         }else{
             // Destructuring Object
             const {apparentTemperature, precipProbability} = body.currently;
-            const {summary} = body.daily.data[0];
-
-            cb(undefined, `${summary} It's currently ${apparentTemperature} celsius. There is a ${precipProbability}% chance of rain.`);
+            const {summary, windSpeed} = body.daily.data[0];
+            
+            cb(undefined, `${summary} It's currently ${apparentTemperature} celsius. Wind ${windSpeed} km/h. There is a ${precipProbability}% chance of rain.`);
         }
     });
 }
