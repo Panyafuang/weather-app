@@ -1,4 +1,3 @@
-console.log('script loaded');
 const form = document.querySelector('#fm');
 const search = document.querySelector('.search');
 const p1 = document.querySelector('#p-1');
