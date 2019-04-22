@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,24 +10,26 @@
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <title>HOME</title>
 </head>
+
 <body>
     <div class="main-content">
-    {{>header}}
-    <p>Use this site to get your weather!</p>
-    <form id="fm">
-        <div class="form-group">
-        <input class="search form-control" type="text" placeholder="Enter Location">
-        <br>
-        <button class="btn btn-info">search</button>
-        </div>
-    </form>
-    <img style="display:none" id="loading" src="" alt="">
-    <p id="p-1"></p>
-    <p id="p-2"></p>
+        {{>header}}
+        <p class="mt-3">Use this site to get your weather!</p>
+        <form id="fm">
+            <div class="form-group">
+                <input class="search form-control" type="text" placeholder="Enter Location">
+                <br>
+                <button class="btn btn-info">search</button>
+            </div>
+        </form>
+        <img style="display:none" id="loading" src="" alt="">
+        <p id="p-1"></p>
+        <p id="p-2"></p>
 
     </div>
 
     {{>footer}}
     <script src="/js/script.js"></script>
 </body>
+
 </html>
