@@ -23,7 +23,7 @@ form.addEventListener('submit', (e) =>{
     }
     setLoading(cb);
 
-    fetch(`http://localhost:3000/weather?location=${location}`)
+    fetch(`/weather?location=${location}`)
         .then(res =>{
             res.json().then(data =>{
                 if(data.err){
